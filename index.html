@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BSMT</title>
+
+  
+  <link rel="icon" type="image/png" href="image/logo1.png">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a href="#home" class="brand brand-logo">
+        <img src="image/logo1.png" alt="Bilişim Sistemleri Mühendisliği Topluluğu Logosu">
+        <span>BİLİŞİM SİSTEMLERİ MÜHENDİSLİĞİ TOPLULUĞU</span>
+      </a>
+        <div class="top-social">
+        <a href="https://www.instagram.com/saubsmt/" target="_blank">
+            <img src="image/instagram.svg" alt="Instagram">
+        </a>
+
+        <a href="https://chat.whatsapp.com/Ltrsb86Mns03nwCVO3CJ9i" target="_blank">
+            <img src="image/whatsapp.svg" alt="WhatsApp">
+        </a>
+
+        <a href="https://www.linkedin.com/in/bsmt/" target="_blank">
+            <img src="image/linkedin.svg" alt="LinkedIn">
+        </a>
+        </div>
+
+      <button class="menu-btn" id="menuBtn" aria-label="Menü">☰</button>
+
+      <nav class="nav" id="nav">
+        <a href="#events">Etkinlikler</a>
+        <a href="#team">Ekip</a>
+        <a class="btn btn-small" href="https://sabis.sakarya.edu.tr/">Üye Ol</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="home" class="hero">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <h1>BSMT</h1>
+        <p class="lead">
+          Etkinlikler, teknik geziler ve projelerle kampüste birlikte üretiyoruz.
+        </p>
+        <div class="hero-cta">
+          <a class="btn" href="https://sabis.sakarya.edu.tr/">Üye Ol</a>
+          <a class="btn btn-ghost" href="#events">Etkinliklere Bak</a>
+        </div>
+
+        <div class="stats">
+          <div class="stat">
+            <div class="stat-num" id="statEvents">0</div>
+            <div class="stat-label">Etkinlik</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">2026</div>
+            <div class="stat-label">Sezon</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <h3>Yaklaşan Etkinlik</h3>
+        <div id="nextEvent" class="next-event">
+        </div>
+      </div>
+    </div>
+  </main>
+
+  
+  <section id="about" class="section section-soft">
+    <div class="container about">
+
+      <div class="about-text">
+        <h2>Biz Kimiz?</h2>
+        <p class="lead">
+          Bizler, Sakarya Üniversitesi Bilişim Sistemleri
+          Mühendisliği Topluluğu olarak; mühendislik disiplinini
+          sosyal becerilerle birleştiren, 'Sosyal Mühendisler'
+          yetiştiren bir ekibiz. Sadece bilgisayar başında kod
+          yazan değil; iletişim kuran, organize eden ve üreten
+          bir yapıyız. Hem akademik derinliği olan hem de
+          sosyal hayatın içinde aktif rol alan, Sakarya’nın en
+          dinamik öğrenci topluluklarından biriyiz.
+        </p>
+
+        <p class="muted">
+          Amacımız; öğrencileri teknik, sosyal ve akademik alanlarda
+          geliştirecek etkinlikler düzenlemek, ekip çalışmasını teşvik etmek
+          ve üniversite içinde sürdürülebilir bir topluluk kültürü oluşturmaktır.
+        </p>
+      </div>
+
+      <div class="about-cards">
+        <div class="card">
+          <h3>Misyonumuz</h3>
+          <p>
+            Öğrenciler arasında bilişim
+            sistemlerine yönelik bilgi
+            paylaşımını sağlamak, teknik
+            becerileri artırmak, sektöre
+            hazırlık sürecinde donanımlı
+            bireyler yetiştirmek, sosyal
+            ve profesyonel gelişimi
+            desteklemek amacıyla teknik
+            eğitimler, etkinlikler ve sosyal
+            buluşmalar düzenlemek.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Vizyonumuz</h3>
+          <p>
+            Teknolojiyi ve yenilikçi
+            düşünceyi benimseyen, bilgi
+            ve yeteneklerle donatılmış
+            bireyler yetiştirerek
+            üniversitemize ve topluma
+            katkı sağlayan, teknik ve
+            sosyal gelişimi destekleyen
+            öncü bir topluluk olmak.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  
+  <section id="events" class="section">
+  <div class="container">
+    <div class="section-head">
+      <h2>Etkinlikler</h2>
+    </div>
+
+    <div class="events-slider">
+      <button class="slider-btn" id="eventsPrev" aria-label="Önceki">‹</button>
+
+      <div class="events-track" id="eventsTrack">
+        
+      </div>
+
+      <button class="slider-btn" id="eventsNext" aria-label="Sonraki">›</button>
+    </div>
+  </div>
+</section>
+
+
+ <section id="past-events" class="section">
+  <div class="container">
+    <div class="section-head">
+      <h2>Geçmiş Etkinlikler</h2>
+    </div>
+
+    <div class="events-slider">
+      <button class="slider-btn" id="pastPrev" aria-label="Önceki">‹</button>
+
+      <div class="events-track" id="pastTrack">
+        
+      </div>
+
+      <button class="slider-btn" id="pastNext" aria-label="Sonraki">›</button>
+    </div>
+  </div>
+</section>
+
+
+ 
+  <section id="team" class="section section-soft">
+    <div class="container">
+      <div class="section-head">
+        <h2>Yönetim Ekibimiz</h2>
+      </div>
+
+      <div class="team-slider">
+        <button class="slider-btn" id="teamPrev" aria-label="Geri">‹</button>
+
+        <div class="team-track" id="teamTrack">
+
+          <article class="card team-card">
+            <img class="team-photo" src="image/1.jpeg" alt="Melik Mirza Çelik">
+            <h3>Melik Mirza Çelik</h3>
+            <p class="muted">Başkan</p>
+          </article>
+
+          <article class="card team-card">
+            <img class="team-photo" src="image/3.jpeg" alt="Emirhan Hasan Aydın">
+            <h3>Emirhan Hasan Aydın</h3>
+            <p class="muted">Başkan Yardımcısı</p>
+          </article>
+
+          <article class="card team-card">
+            <img class="team-photo" src="image/2.jpeg" alt="">
+            <h3></h3>
+            <p class="muted">Başkan Yardımcısı</p>
+          </article>
+
+          <article class="card team-card">
+            <img class="team-photo" src="image/4.jpeg" alt="">
+            <h3></h3>
+            <p class="muted">Genel Sekreter</p>
+          </article>
+
+          <article class="card team-card">
+            <img class="team-photo" src="image/5.jpeg" alt="Ebrar Ergül">
+            <h3>Ebrar Ergül</h3>
+            <p class="muted">Organizasyon</p>
+          </article>
+
+          <article class="card team-card">
+            <img class="team-photo" src="image/6.jpeg" alt="Tarık Emre Keskin">
+            <h3>Tarık Emre Keskin</h3>
+            <p class="muted">Organizasyon</p>
+          </article>
+
+          <article class="card team-card">
+            <img class="team-photo" src="image/7.jpeg" alt="">
+            <h3></h3>
+            <p class="muted">Sponsorluk</p>
+          </article>
+
+          <article class="card team-card">
+            <img class="team-photo" src="image/8.jpeg" alt="">
+            <h3></h3>
+            <p class="muted">Sosyal Medya</p>
+          </article>
+
+          <article class="card team-card">
+            <img class="team-photo" src="image/9.jpeg" alt="">
+            <h3></h3>
+            <p class="muted">Sosyal Medya</p>
+          </article>
+
+          <article class="card team-card">
+            <img class="team-photo" src="image/10.jpeg" alt="Özlem Dilber">
+            <h3>Özlem Dilber</h3>
+            <p class="muted">Grafik Tasarım</p>
+          </article>
+
+        </div>
+
+        <button class="slider-btn" id="teamNext" aria-label="İleri">›</button>
+      </div>
+
+    </div>
+  </section>
+
+  
+  <section id="contact" class="section section-soft">
+  <div class="container">
+    <div class="section-head">
+      <h2>Fikirlerinizi bizimle paylaşabilirsiniz</h2>
+    </div>
+
+    <iframe name="hidden_iframe" style="display:none;"></iframe>
+
+    <form class="form"
+          action="https://formsubmit.co/bsmt@sakarya.edu.tr"
+          method="POST"
+          target="hidden_iframe"
+          onsubmit="formSent();">
+
+      <input type="hidden" name="_subject" value="BSMT - Yeni Mesaj">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="table">
+
+      <div class="form-row">
+        <label>
+          Ad Soyad
+          <input class="input" name="Ad Soyad" required>
+        </label>
+        <label>
+          E-posta
+          <input class="input" name="E-posta" type="email" required>
+        </label>
+      </div>
+
+      <div class="form-row">
+        <label>
+          Bölümünüz
+          <input class="input" name="Bölüm">
+        </label>
+        <label>
+          Sınıf
+          <select class="input" name="Sınıf">
+            <option>Hazırlık</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+          </select>
+        </label>
+      </div>
+
+      <label>
+        Mesaj
+        <textarea class="input" name="Mesaj" rows="4"></textarea>
+      </label>
+
+      <div class="form-actions">
+        <button class="btn" type="submit">Gönder</button>
+        <span id="formStatus" class="muted"></span>
+      </div>
+    </form>
+
+    <div class="social">
+      <a class="pill" href="https://www.instagram.com/saubsmt/" target="_blank" rel="noreferrer">Instagram</a>
+      <a class="pill" href="https://chat.whatsapp.com/Ltrsb86Mns03nwCVO3CJ9i" target="_blank" rel="noreferrer">WhatsApp</a>
+      <a class="pill" href="https://www.linkedin.com/in/bsmt/" target="_blank" rel="noreferrer">LinkedIn</a>
+    </div>
+  </div>
+</section>
+
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="muted">© <span id="year"></span> Bilişim Sistemleri Mühendisliği Topluluğu</span>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
