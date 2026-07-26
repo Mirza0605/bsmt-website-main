@@ -26,59 +26,111 @@
       "image/105.jpeg"
     ]
   },
-
   "texts": {
-    "aboutWhatTitle": {
-      "tr": "Bilişim Sistemleri Mühendisliği Nedir?",
-      "en": "What is Information Systems Engineering?"
-    },
     "aboutWhatText": {
       "tr": "Bu bölüm, teknoloji ile iş dünyası (işletme/yönetim) arasındaki köprüdür. Sadece bir yazılımın kodunu yazmakla ilgilenmezsiniz; müfredatınızdaki işletme ve endüstri temelli derslerin kazandırdığı analitik vizyon sayesinde, o yazılımın şirketteki hangi problemleri çözeceğini ve iş süreçlerini nasıl optimize edeceğini de hesaplarsınız. Bu kurumsal ihtiyaçları belirledikten sonra işin teknik mimarisini kurgular; verilerin nerede ve nasıl tutulacağını, farklı sistemlerin birbiriyle nasıl haberleşeceğini tasarlarsınız. Yani teknolojiyi sadece üretmekle kalmayan, onu işletme mantığı ve süreç verimliliğiyle harmanlayarak sistemin bütününü gören mühendisler yetiştirir.",
       "en": "This field is the bridge between technology and the business world (management). You don't just write software code; thanks to the analytical vision gained from the business- and industry-based courses in your curriculum, you also work out which problems that software will solve for a company and how it will optimize business processes. After identifying these organizational needs, you design the technical architecture of the solution — where and how data will be stored, and how different systems will communicate with each other. In short, it trains engineers who don't just build technology, but blend it with business logic and process efficiency to see the whole system."
     },
-    "aboutWhoTitle": { "tr": "Biz Kimiz?", "en": "Who Are We?" },
-    "aboutWhoText": {
-      "tr": "Bizler, Sakarya Üniversitesi Bilişim Sistemleri Mühendisliği Topluluğu olarak; mühendislik disiplinini sosyal becerilerle birleştiren, 'Sosyal Mühendisler' yetiştiren bir ekibiz. Sadece bilgisayar başında kod yazan değil; iletişim kuran, organize eden ve üreten bir yapıyız. Hem akademik derinliği olan hem de sosyal hayatın içinde aktif rol alan, Sakarya'nın en dinamik öğrenci topluluklarından biriyiz.",
-      "en": "As the Sakarya University Information Systems Engineering Community, we're a team that blends engineering discipline with social skills, raising 'Social Engineers'. We're not just people who write code behind a computer — we communicate, organize, and build. We're one of Sakarya's most dynamic student communities, with both academic depth and an active role in social life."
+    "aboutWhatTitle": {
+      "tr": "Bilişim Sistemleri Mühendisliği Nedir?",
+      "en": "What is Information Systems Engineering?"
     },
     "aboutWhoMuted": {
       "tr": "Amacımız; öğrencileri teknik, sosyal ve akademik alanlarda geliştirecek etkinlikler düzenlemek, ekip çalışmasını teşvik etmek ve üniversite içinde sürdürülebilir bir topluluk kültürü oluşturmaktır.",
       "en": "Our goal is to organize events that develop students technically, socially, and academically, to encourage teamwork, and to build a sustainable community culture within the university."
     },
-    "missionTitle": { "tr": "Misyonumuz", "en": "Our Mission" },
-    "missionText": {
-      "tr": "Öğrenciler arasında bilişim sistemlerine yönelik bilgi paylaşımını sağlamak, teknik becerileri artırmak, sektöre hazırlık sürecinde donanımlı bireyler yetiştirmek, sosyal ve profesyonel gelişimi desteklemek amacıyla teknik eğitimler, etkinlikler ve sosyal buluşmalar düzenlemek.",
-      "en": "To organize technical training, events, and social gatherings that spread knowledge of information systems among students, strengthen technical skills, prepare well-equipped individuals for industry, and support social and professional development."
+    "aboutWhoText": {
+      "tr": "Bizler, Sakarya Üniversitesi Bilişim Sistemleri Mühendisliği Topluluğu olarak; mühendislik disiplinini sosyal becerilerle birleştiren, 'Sosyal Mühendisler' yetiştiren bir ekibiz. Sadece bilgisayar başında kod yazan değil; iletişim kuran, organize eden ve üreten bir yapıyız. Hem akademik derinliği olan hem de sosyal hayatın içinde aktif rol alan, Sakarya'nın en dinamik öğrenci topluluklarından biriyiz.",
+      "en": "As the Sakarya University Information Systems Engineering Community, we're a team that blends engineering discipline with social skills, raising 'Social Engineers'. We're not just people who write code behind a computer — we communicate, organize, and build. We're one of Sakarya's most dynamic student communities, with both academic depth and an active role in social life."
     },
-    "visionTitle": { "tr": "Vizyonumuz", "en": "Our Vision" },
-    "visionText": {
-      "tr": "Teknolojiyi ve yenilikçi düşünceyi benimseyen, bilgi ve yeteneklerle donatılmış bireyler yetiştirerek üniversitemize ve topluma katkı sağlayan, teknik ve sosyal gelişimi destekleyen öncü bir topluluk olmak.",
-      "en": "To be a pioneering community that embraces technology and innovative thinking, raises individuals equipped with knowledge and skills, contributes to our university and society, and supports technical and social development."
+    "aboutWhoTitle": {
+      "tr": "Biz Kimiz?",
+      "en": "Who Are We?"
     },
-    "joinTitle": { "tr": "Kulübe Üye Ol", "en": "Join the Club" },
+    "contactTitle": {
+      "tr": "Fikirlerinizi bizimle paylaşabilirsiniz",
+      "en": "Share your thoughts with us"
+    },
+    "faqTitle": {
+      "tr": "Sıkça Sorulan Sorular",
+      "en": "Frequently Asked Questions"
+    },
+    "joinInstagramDesc": {
+      "tr": "Etkinlik görselleri ve hikayeler",
+      "en": "Event photos and stories"
+    },
+    "joinInstagramTitle": {
+      "tr": "Instagram",
+      "en": "Instagram"
+    },
     "joinIntro": {
       "tr": "Bilişim Sistemleri Mühendisliği Topluluğu'na katılmak, etkinliklerimizden haberdar olmak ve ekibimizin bir parçası olmak için aşağıdaki kanallardan bize ulaş.",
       "en": "Reach us through the channels below to join the Information Systems Engineering Community, stay up to date with our events, and become part of our team."
     },
-    "joinSabisTitle": { "tr": "SABİS'ten Üye Ol", "en": "Join via SABİS" },
-    "joinSabisDesc": { "tr": "Resmi kulüp üyelik başvurusu", "en": "Official club membership application" },
-    "joinWhatsappTitle": { "tr": "WhatsApp Grubu", "en": "WhatsApp Group" },
-    "joinWhatsappDesc": { "tr": "Duyuruları anlık takip et", "en": "Follow announcements in real time" },
-    "joinInstagramTitle": { "tr": "Instagram", "en": "Instagram" },
-    "joinInstagramDesc": { "tr": "Etkinlik görselleri ve hikayeler", "en": "Event photos and stories" },
-    "joinLinkedinTitle": { "tr": "LinkedIn", "en": "LinkedIn" },
-    "joinLinkedinDesc": { "tr": "Profesyonel ağ ve iş ilanları", "en": "Professional network and job postings" },
-    "pastEventsTitle": { "tr": "Geçmiş Etkinlikler", "en": "Past Events" },
-    "teamSectionTitle": { "tr": "Yönetim Ekibimiz", "en": "Our Management Team" },
-    "faqTitle": { "tr": "Sıkça Sorulan Sorular", "en": "Frequently Asked Questions" },
-    "contactTitle": { "tr": "Fikirlerinizi bizimle paylaşabilirsiniz", "en": "Share your thoughts with us" }
+    "joinLinkedinDesc": {
+      "tr": "Profesyonel ağ ve iş ilanları",
+      "en": "Professional network and job postings"
+    },
+    "joinLinkedinTitle": {
+      "tr": "LinkedIn",
+      "en": "LinkedIn"
+    },
+    "joinSabisDesc": {
+      "tr": "Resmi kulüp üyelik başvurusu",
+      "en": "Official club membership application"
+    },
+    "joinSabisTitle": {
+      "tr": "SABİS'ten Üye Ol",
+      "en": "Join via SABİS"
+    },
+    "joinTitle": {
+      "tr": "Kulübe Üye Ol",
+      "en": "Join the Club"
+    },
+    "joinWhatsappDesc": {
+      "tr": "Duyuruları anlık takip et",
+      "en": "Follow announcements in real time"
+    },
+    "joinWhatsappTitle": {
+      "tr": "WhatsApp Grubu",
+      "en": "WhatsApp Group"
+    },
+    "missionText": {
+      "tr": "Öğrenciler arasında bilişim sistemlerine yönelik bilgi paylaşımını sağlamak, teknik becerileri artırmak, sektöre hazırlık sürecinde donanımlı bireyler yetiştirmek, sosyal ve profesyonel gelişimi desteklemek amacıyla teknik eğitimler, etkinlikler ve sosyal buluşmalar düzenlemek.",
+      "en": "To organize technical training, events, and social gatherings that spread knowledge of information systems among students, strengthen technical skills, prepare well-equipped individuals for industry, and support social and professional development."
+    },
+    "missionTitle": {
+      "tr": "Misyonumuz",
+      "en": "Our Mission"
+    },
+    "pastEventsTitle": {
+      "tr": "Geçmiş Etkinlikler",
+      "en": "Past Events"
+    },
+    "teamSectionTitle": {
+      "tr": "Yönetim Ekibimiz",
+      "en": "Our Management Team"
+    },
+    "visionText": {
+      "tr": "Teknolojiyi ve yenilikçi düşünceyi benimseyen, bilgi ve yeteneklerle donatılmış bireyler yetiştirerek üniversitemize ve topluma katkı sağlayan, teknik ve sosyal gelişimi destekleyen öncü bir topluluk olmak.",
+      "en": "To be a pioneering community that embraces technology and innovative thinking, raises individuals equipped with knowledge and skills, contributes to our university and society, and supports technical and social development."
+    },
+    "visionTitle": {
+      "tr": "Vizyonumuz",
+      "en": "Our Vision"
+    }
   },
-
   "events": [
     {
       "id": "ev-sui-workshop",
-      "title": { "tr": "Sui Workshop", "en": "Sui Workshop" },
-      "type": { "tr": "Workshop", "en": "Workshop" },
+      "title": {
+        "tr": "Sui Workshop",
+        "en": "Sui Workshop"
+      },
+      "type": {
+        "tr": "Workshop",
+        "en": "Workshop"
+      },
       "date": "2025-10-22",
       "time": "18:00",
       "place": {
@@ -94,22 +146,43 @@
     },
     {
       "id": "ev-bilisim-vadisi",
-      "title": { "tr": "Bilişim Vadisi Teknik Gezisi", "en": "Bilişim Vadisi Technical Trip" },
-      "type": { "tr": "Teknik Gezi", "en": "Technical Trip" },
+      "title": {
+        "tr": "Bilişim Vadisi Teknik Gezisi",
+        "en": "Bilişim Vadisi Technical Trip"
+      },
+      "type": {
+        "tr": "Teknik Gezi",
+        "en": "Technical Trip"
+      },
       "date": "2026-02-17",
       "time": "14:00",
-      "place": { "tr": "Bilişim Vadisi", "en": "Bilişim Vadisi" },
-      "desc": { "tr": "", "en": "" },
+      "place": {
+        "tr": "Bilişim Vadisi",
+        "en": "Bilişim Vadisi"
+      },
+      "desc": {
+        "tr": "",
+        "en": ""
+      },
       "image": "image/95.jpeg",
       "link": ""
     },
     {
       "id": "ev-mezunlarla-is-bulma",
-      "title": { "tr": "Mezunlarla İş Bulma Süreci", "en": "Job Search Process with Alumni" },
-      "type": { "tr": "Söyleşi", "en": "Talk" },
+      "title": {
+        "tr": "Mezunlarla İş Bulma Süreci",
+        "en": "Job Search Process with Alumni"
+      },
+      "type": {
+        "tr": "Söyleşi",
+        "en": "Talk"
+      },
       "date": "2025-12-12",
       "time": "19:00",
-      "place": { "tr": "Greenwich Cafe", "en": "Greenwich Cafe" },
+      "place": {
+        "tr": "Greenwich Cafe",
+        "en": "Greenwich Cafe"
+      },
       "desc": {
         "tr": "Mezuniyet sonrası o meşhur ilk 6 ayın tüm spoiler'ları masada!",
         "en": "All the spoilers about that famous first 6 months after graduation, on the table!"
@@ -119,11 +192,20 @@
     },
     {
       "id": "ev-hackathon-2025",
-      "title": { "tr": "Hackathon 2025", "en": "Hackathon 2025" },
-      "type": { "tr": "Hackathon", "en": "Hackathon" },
+      "title": {
+        "tr": "Hackathon 2025",
+        "en": "Hackathon 2025"
+      },
+      "type": {
+        "tr": "Hackathon",
+        "en": "Hackathon"
+      },
       "date": "2025-12-19",
       "time": "19:00",
-      "place": { "tr": "Konferans Personel Yemekhanesi", "en": "Conference Staff Cafeteria" },
+      "place": {
+        "tr": "Konferans Personel Yemekhanesi",
+        "en": "Conference Staff Cafeteria"
+      },
       "desc": {
         "tr": "Etkinliğin sonunda staj imkanı sizi bekliyor!",
         "en": "An internship opportunity awaits you at the end of the event!"
@@ -133,11 +215,20 @@
     },
     {
       "id": "ev-quiz-night",
-      "title": { "tr": "Quiz Night", "en": "Quiz Night" },
-      "type": { "tr": "Quiz Night", "en": "Quiz Night" },
+      "title": {
+        "tr": "Quiz Night",
+        "en": "Quiz Night"
+      },
+      "type": {
+        "tr": "Quiz Night",
+        "en": "Quiz Night"
+      },
       "date": "2025-10-17",
       "time": "18:30",
-      "place": { "tr": "Bonne Vie", "en": "Bonne Vie" },
+      "place": {
+        "tr": "Bonne Vie",
+        "en": "Bonne Vie"
+      },
       "desc": {
         "tr": "Eğlence, kahkaha ve yarışma dolu bir gece için tek ihtiyacımız var: SEN! Aramıza bekleriz.",
         "en": "For a night full of fun, laughter, and competition, there's only one thing we need: YOU! We'll be waiting for you."
@@ -147,33 +238,111 @@
     },
     {
       "id": "ev-aris-workshop",
-      "title": { "tr": "Aris Workshop", "en": "Aris Workshop" },
-      "type": { "tr": "Workshop", "en": "Workshop" },
+      "title": {
+        "tr": "Aris Workshop",
+        "en": "Aris Workshop"
+      },
+      "type": {
+        "tr": "Workshop",
+        "en": "Workshop"
+      },
       "date": "2026-03-04",
       "time": "",
       "place": {
         "tr": "Bilgisayar ve Bilişim Bilimleri Fakültesi",
         "en": "Faculty of Computer and Information Sciences"
       },
-      "desc": { "tr": "", "en": "" },
+      "desc": {
+        "tr": "",
+        "en": ""
+      },
       "image": "image/60.jpeg",
       "link": ""
     }
   ],
-
   "team": [
-    { "id": "tm-1",  "name": "Melik Mirza Çelik",   "role": { "tr": "Başkan", "en": "President" },            "photo": "image/1.jpeg" },
-    { "id": "tm-2",  "name": "Emirhan Hasan Aydın", "role": { "tr": "Başkan Yardımcısı", "en": "Vice President" }, "photo": "image/3.jpeg" },
-    { "id": "tm-3",  "name": "",                    "role": { "tr": "Başkan Yardımcısı", "en": "Vice President" }, "photo": "image/2.jpeg" },
-    { "id": "tm-4",  "name": "",                    "role": { "tr": "Genel Sekreter", "en": "Secretary General" }, "photo": "image/4.jpeg" },
-    { "id": "tm-5",  "name": "Ebrar Ergül",         "role": { "tr": "Organizasyon", "en": "Organization" },   "photo": "image/5.jpeg" },
-    { "id": "tm-6",  "name": "Tarık Emre Keskin",   "role": { "tr": "Organizasyon", "en": "Organization" },   "photo": "image/6.jpeg" },
-    { "id": "tm-7",  "name": "",                    "role": { "tr": "Sponsorluk", "en": "Sponsorship" },      "photo": "image/7.jpeg" },
-    { "id": "tm-8",  "name": "",                    "role": { "tr": "Sosyal Medya", "en": "Social Media" },   "photo": "image/8.jpeg" },
-    { "id": "tm-9",  "name": "",                    "role": { "tr": "Sosyal Medya", "en": "Social Media" },   "photo": "image/9.jpeg" },
-    { "id": "tm-10", "name": "Özlem Dilber",        "role": { "tr": "Grafik Tasarım", "en": "Graphic Design" }, "photo": "image/10.jpeg" }
+    {
+      "id": "tm-1",
+      "name": "Melik Mirza Çelik",
+      "role": {
+        "tr": "Başkan",
+        "en": "President"
+      },
+      "photo": "image/1.jpeg"
+    },
+    {
+      "id": "tm-2",
+      "name": "Emirhan Hasan Aydın",
+      "role": {
+        "tr": "Başkan Yardımcısı",
+        "en": "Vice President"
+      },
+      "photo": "image/3.jpeg"
+    },
+    {
+      "id": "tm-3",
+      "name": "Ebrar ERGÜL",
+      "role": {
+        "tr": "Başkan Yardımcısı",
+        "en": "Vice President"
+      },
+      "photo": "image/2.jpeg"
+    },
+    {
+      "id": "tm-6",
+      "name": "Tarık Emre Keskin",
+      "role": {
+        "tr": "Organizasyon",
+        "en": "Organization"
+      },
+      "photo": "image/6.jpeg"
+    },
+    {
+      "id": "tm-ms1wq9rf14a911",
+      "name": "İrem AYDINLI",
+      "role": {
+        "tr": "Organizasyon",
+        "en": ""
+      },
+      "photo": ""
+    },
+    {
+      "id": "tm-ms1wpkp54be949",
+      "name": "Onur AYTEKİN",
+      "role": {
+        "tr": "Organizasyon",
+        "en": ""
+      },
+      "photo": ""
+    },
+    {
+      "id": "tm-ms1wsu3v067f81",
+      "name": "Hasan Basri ALKAN",
+      "role": {
+        "tr": "Sponsorluk",
+        "en": ""
+      },
+      "photo": ""
+    },
+    {
+      "id": "tm-7",
+      "name": "Selim ŞEN",
+      "role": {
+        "tr": "Sponsorluk",
+        "en": "Sponsorship"
+      },
+      "photo": "image/7.jpeg"
+    },
+    {
+      "id": "tm-8",
+      "name": "Yasin DURAK",
+      "role": {
+        "tr": "Sosyal Medya",
+        "en": "Social Media"
+      },
+      "photo": "image/8.jpeg"
+    }
   ],
-
   "faq": [
     {
       "id": "faq-1",
