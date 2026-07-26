@@ -210,4 +210,46 @@ changeBackground();
 
 setInterval(changeBackground, 3000);
 
+function setupFAQ() {
+  const faqItems = document.querySelectorAll(".faq-item");
+
+  faqItems.forEach((item) => {
+    const questionBtn = item.querySelector(".faq-question");
+    const answer = item.querySelector(".faq-answer");
+
+    questionBtn.addEventListener("click", () => {
+      const isOpen = item.classList.contains("active");
+
+      faqItems.forEach((otherItem) => {
+        otherItem.classList.remove("active");
+        otherItem.querySelector(".faq-answer").style.maxHeight = null;
+      });
+
+      if (!isOpen) {
+        item.classList.add("active");
+        answer.style.maxHeight = answer.scrollHeight + "px";
+      }
+    });
+  });
+}
+
+function init(){
+  const yearEl = $("#year");
+  if (yearEl) yearEl.textContent = new Date().getFullYear();
+  if (statEvents) statEvents.textContent = String(events.length);
+
+  const { upcoming, past } = splitEvents();
+
+  renderEventCards(upcoming, eventsTrack);
+  renderEventCards(past, pastTrack);
+  renderNextEvent(upcoming);
+
+  setupMenu();
+
+  setupSlider("#eventsTrack", "#eventsPrev", "#eventsNext", ".event-card", 340);
+  setupSlider("#pastTrack", "#pastPrev", "#pastNext", ".event-card", 340);
+  setupSlider("#teamTrack", "#teamPrev", "#teamNext", ".card", 320);
+  setupFAQ(); 
+}
+
 init();

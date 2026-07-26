@@ -298,3 +298,60 @@ select.input:focus { border-color: var(--accent); box-shadow: 0 0 0 3px rgba(255
   
   filter: drop-shadow(0px 12px 24px rgba(79, 70, 229, 0.35));
 }
+
+.faq-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  padding: 0;
+  overflow: hidden;
+}
+
+.faq-question {
+  width: 100%;
+  text-align: left;
+  background: transparent;
+  border: none;
+  padding: 20px;
+  color: var(--text);
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: inherit;
+  transition: background 0.3s ease;
+}
+
+.faq-question:hover {
+  background: rgba(231, 238, 252, 0.03);
+}
+
+.faq-icon {
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--accent);
+  transition: transform 0.3s ease;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
+
+.faq-answer p {
+  padding: 0 20px 20px 20px;
+  margin: 0;
+}
+
+
+.faq-item.active .faq-icon {
+  transform: rotate(45deg); 
+}
