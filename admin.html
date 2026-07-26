@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex, nofollow">
+  <title>BSMT — Yönetim Paneli</title>
+  <link rel="icon" type="image/png" href="image/logo1.png">
+  <link rel="stylesheet" href="admin.css" />
+</head>
+<body>
+
+  <div class="login" id="loginScreen">
+    <form class="login-box" id="loginForm">
+      <img src="image/logo1.png" alt="BSMT" width="56" height="56">
+      <h1>Yönetim Paneli</h1>
+      <p class="muted">Devam etmek için hesabınla giriş yap.</p>
+
+      <input class="field" type="text" id="loginUser" placeholder="Kullanıcı adı"
+             autocomplete="username" required>
+      <input class="field" type="password" id="loginPass" placeholder="Şifre"
+             autocomplete="current-password" required>
+
+      <button class="btn btn-primary" type="submit" id="loginSubmit">Giriş Yap</button>
+      <p class="login-error" id="loginError" hidden></p>
+    </form>
+  </div>
+
+  <div class="admin" id="adminApp" hidden>
+
+    <aside class="sidebar">
+      <div class="sidebar-brand">
+        <img src="image/logo1.png" alt="" width="34" height="34">
+        <div>
+          <strong>BSMT</strong>
+          <small>Yönetim Paneli</small>
+        </div>
+      </div>
+
+      <nav class="sidebar-nav">
+        <button type="button" class="nav-item is-active" data-panel="dashboard"><span>📊</span> Genel Bakış</button>
+        <button type="button" class="nav-item" data-panel="events"><span>📅</span> Etkinlikler <em id="countEvents">0</em></button>
+        <button type="button" class="nav-item" data-panel="team"><span>👥</span> Yönetim Ekibi <em id="countTeam">0</em></button>
+        <button type="button" class="nav-item" data-panel="faq"><span>❓</span> S.S.S. <em id="countFaq">0</em></button>
+        <button type="button" class="nav-item" data-panel="texts"><span>📝</span> Site Metinleri</button>
+        <button type="button" class="nav-item" data-panel="settings"><span>⚙️</span> Ayarlar</button>
+        <button type="button" class="nav-item" data-panel="messages"><span>✉️</span> Mesajlar <em id="countMessages">0</em></button>
+        <button type="button" class="nav-item" data-panel="account"><span>🔐</span> Hesap</button>
+      </nav>
+
+      <div class="sidebar-foot">
+        <a class="ghost-link" href="index.html" target="_blank" rel="noopener">↗ Siteyi Görüntüle</a>
+        <button type="button" class="ghost-link" id="btnLogout">⎋ Çıkış Yap</button>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div>
+          <h1 id="panelTitle">Genel Bakış</h1>
+          <p class="muted" id="panelDesc">Sitenin güncel durumu.</p>
+        </div>
+        <div class="topbar-actions">
+          <span class="dirty-dot" id="savingDot" hidden>● Kaydediliyor…</span>
+          <button class="btn" type="button" id="btnRefresh">↻ Yenile</button>
+        </div>
+      </header>
+
+      <div class="panels">
+
+        <section class="panel is-active" data-panel="dashboard">
+          <div class="stat-grid">
+            <div class="stat-card"><span class="stat-num" id="statUpcoming">0</span><span class="stat-label">Yaklaşan Etkinlik</span></div>
+            <div class="stat-card"><span class="stat-num" id="statPast">0</span><span class="stat-label">Geçmiş Etkinlik</span></div>
+            <div class="stat-card"><span class="stat-num" id="statTeam">0</span><span class="stat-label">Ekip Üyesi</span></div>
+            <div class="stat-card"><span class="stat-num" id="statMessages">0</span><span class="stat-label">Mesaj</span></div>
+          </div>
+
+          <div class="box" id="dashNext"></div>
+          <div class="box" id="dashWarnings"></div>
+
+          <div class="box">
+            <h3>Nasıl çalışır?</h3>
+            <p class="muted">
+              Bu panelde yaptığın her değişiklik doğrudan veritabanına yazılır ve
+              siteyi yenilediğin anda herkes tarafından görülür. Ayrı bir yayınlama
+              adımı yoktur.
+            </p>
+          </div>
+        </section>
+
+        <section class="panel" data-panel="events">
+          <div class="panel-actions">
+            <button class="btn btn-primary" type="button" data-add="events">+ Yeni Etkinlik</button>
+          </div>
+          <div class="list" id="listEvents"></div>
+        </section>
+
+        <section class="panel" data-panel="team">
+          <div class="panel-actions">
+            <button class="btn btn-primary" type="button" data-add="team">+ Yeni Üye</button>
+          </div>
+          <div class="list" id="listTeam"></div>
+        </section>
+
+        <section class="panel" data-panel="faq">
+          <div class="panel-actions">
+            <button class="btn btn-primary" type="button" data-add="faq">+ Yeni Soru</button>
+          </div>
+          <div class="list" id="listFaq"></div>
+        </section>
+
+        <section class="panel" data-panel="texts">
+          <div class="box"><p class="muted">Yazdıkça otomatik kaydedilir. Boş bırakılan alan varsayılan metne döner.</p></div>
+          <div id="textsForm"></div>
+        </section>
+
+        <section class="panel" data-panel="settings">
+          <div id="settingsForm"></div>
+
+          <div class="box">
+            <h3>Ana Sayfa Arka Plan Görselleri</h3>
+            <p class="muted">Hero bölümünde sırayla geçiş yapan görseller.</p>
+            <div class="hero-img-grid" id="heroImages"></div>
+            <div class="row-actions">
+              <label class="btn">
+                + Görsel Yükle
+                <input type="file" accept="image/*" id="heroUpload" hidden multiple>
+              </label>
+              <button class="btn" type="button" id="heroAddPath">+ Dosya Yolu Ekle</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="panel" data-panel="messages">
+          <div id="listMessages"></div>
+        </section>
+
+        <section class="panel" data-panel="account">
+          <div class="box">
+            <h3>Şifre Değiştir</h3>
+            <form class="form-grid" id="passwordForm" style="max-width:420px;margin-top:10px">
+              <div class="form-field">
+                <label>Mevcut şifre</label>
+                <input class="field" type="password" id="curPass" autocomplete="current-password" required>
+              </div>
+              <div class="form-field">
+                <label>Yeni şifre (en az 8 karakter)</label>
+                <input class="field" type="password" id="newPass" autocomplete="new-password" minlength="8" required>
+              </div>
+              <div class="form-field">
+                <label>Yeni şifre (tekrar)</label>
+                <input class="field" type="password" id="newPass2" autocomplete="new-password" minlength="8" required>
+              </div>
+              <div><button class="btn btn-primary" type="submit">Şifreyi Güncelle</button></div>
+            </form>
+          </div>
+
+          <div class="box">
+            <h3>Yedek Al</h3>
+            <p class="muted">
+              Veritabanındaki tüm içeriği <code>data.json</code> olarak indirir. Bu dosya aynı zamanda
+              sitenin sunucusuz (statik) yayında kullandığı yedek kaynaktır.
+            </p>
+            <div class="row-actions">
+              <button class="btn btn-primary" type="button" id="btnExport">⬇ data.json İndir</button>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </main>
+  </div>
+
+  <div class="modal" id="modal" hidden role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-box">
+      <header class="modal-head">
+        <h2 id="modalTitle">Düzenle</h2>
+        <button class="icon-btn" type="button" id="modalClose" aria-label="Kapat">✕</button>
+      </header>
+      <form class="modal-body" id="modalForm"></form>
+      <footer class="modal-foot">
+        <button class="btn" type="button" id="modalCancel">Vazgeç</button>
+        <button class="btn btn-primary" type="button" id="modalSave">Kaydet</button>
+      </footer>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" hidden></div>
+
+  <script src="admin.js"></script>
+</body>
+</html>

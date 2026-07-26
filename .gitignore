@@ -1,0 +1,11 @@
+# Bagimliliklar
+node_modules/
+
+# Ortam degiskenleri — sifreler burada, asla commit etmeyin
+server/.env
+
+# Panelden yuklenen gorseller
+image/uploads/
+
+# Isletim sistemi
+.DS_Store

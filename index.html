@@ -3,70 +3,77 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>BSMT</title>
+  <title data-i18n="pageTitle">BSMT — Sakarya Üniversitesi Bilişim Sistemleri Mühendisliği Topluluğu</title>
 
-  
+  <meta name="description" content="Sakarya Üniversitesi Bilişim Sistemleri Mühendisliği Topluluğu (BSMT): teknik eğitimler, workshoplar, hackathonlar ve sosyal etkinlikler.">
+  <meta name="theme-color" content="#0B101E">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="BSMT — Bilişim Sistemleri Mühendisliği Topluluğu">
+  <meta property="og:description" content="Teknik eğitimler, workshoplar, hackathonlar ve sosyal etkinlikler. Sakarya Üniversitesi.">
+  <meta property="og:image" content="image/logo1.png">
+  <meta property="og:locale" content="tr_TR">
+
   <link rel="icon" type="image/png" href="image/logo1.png">
 
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap" rel="stylesheet">
- 
+
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+
+  <a class="skip-link" href="#home" data-i18n="skipLink">İçeriğe geç</a>
 
   <header class="topbar">
     <div class="container topbar-inner">
       <a href="#home" class="brand brand-logo">
-        <img src="image/logo1.png" alt="Bilişim Sistemleri Mühendisliği Topluluğu Logosu">
-        <span>BİLİŞİM SİSTEMLERİ MÜHENDİSLİĞİ TOPLULUĞU</span>
+        <img src="image/logo1.png" alt="Bilişim Sistemleri Mühendisliği Topluluğu Logosu" width="42" height="42" data-i18n-attr="alt:logoAlt">
+        <span data-i18n="brandName">BİLİŞİM SİSTEMLERİ MÜHENDİSLİĞİ TOPLULUĞU</span>
       </a>
-        <div class="top-social">
-        <a href="https://www.instagram.com/saubsmt/" target="_blank">
-            <img src="image/instagram.svg" alt="Instagram">
-        </a>
 
-        <a href="https://chat.whatsapp.com/Ltrsb86Mns03nwCVO3CJ9i" target="_blank">
-            <img src="image/whatsapp.svg" alt="WhatsApp">
-        </a>
-
-        <a href="https://www.linkedin.com/in/bsmt/" target="_blank">
-            <img src="image/linkedin.svg" alt="LinkedIn">
-        </a>
-        </div>
-
-      <button class="menu-btn" id="menuBtn" aria-label="Menü">☰</button>
+      <button class="menu-btn" id="menuBtn" type="button" aria-label="Menü" aria-controls="nav" aria-expanded="false" data-i18n-attr="aria-label:menuAria">☰</button>
 
       <nav class="nav" id="nav">
-        <a href="#events">Etkinlikler</a>
-        <a href="#team">Ekip</a>
-        <a class="btn btn-small" href="https://sabis.sakarya.edu.tr/">Üye Ol</a>
+        <a href="#about" data-i18n="navAbout">Hakkımızda</a>
+        <a href="#events" data-i18n="navEvents">Etkinlikler</a>
+        <a href="#team" data-i18n="navTeam">Ekip</a>
+        <a href="#sss" data-i18n="navFaq">SSS</a>
+        <a href="#contact" data-i18n="navContact">İletişim</a>
+        <a class="btn btn-small" href="https://sabis.sakarya.edu.tr/" target="_blank" rel="noopener noreferrer" data-i18n="navJoin" data-link="sabis">Üye Ol</a>
+        <div class="lang-switch" id="langSwitch" role="group" aria-label="Dil seçimi" data-i18n-attr="aria-label:langSwitchAria">
+          <button type="button" class="lang-btn is-active" data-lang="tr" aria-pressed="true">TR</button>
+          <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+        </div>
       </nav>
     </div>
   </header>
 
   <main id="home" class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-bg"></div>
+
     <div class="container hero-inner">
       <div class="hero-text">
-        <h1>BİLİŞİM SİSTEMLERİ MÜHENDİSLİĞİ TOPLULUĞU</h1>
-        <p class="lead">
-        </p>
-      
+        <h1 data-i18n="heroTitle">BİLİŞİM SİSTEMLERİ MÜHENDİSLİĞİ TOPLULUĞU</h1>
+      </div>
     </div>
   </main>
 
-  
   <section id="about" class="section section-soft">
     <div class="container about">
 
       <div class="about-text">
-        <h2>Bilişim Sistemleri Mühendisliği Nedir?</h2>
-        <p class="lead">
+        <h2 data-i18n="aboutWhatTitle">Bilişim Sistemleri Mühendisliği Nedir?</h2>
+        <p class="lead" data-i18n="aboutWhatText">
           Bu bölüm, teknoloji ile iş dünyası (işletme/yönetim) arasındaki köprüdür. Sadece bir yazılımın kodunu yazmakla ilgilenmezsiniz; müfredatınızdaki işletme ve endüstri temelli derslerin kazandırdığı analitik vizyon sayesinde, o yazılımın şirketteki hangi problemleri çözeceğini ve iş süreçlerini nasıl optimize edeceğini de hesaplarsınız. Bu kurumsal ihtiyaçları belirledikten sonra işin teknik mimarisini kurgular; verilerin nerede ve nasıl tutulacağını, farklı sistemlerin birbiriyle nasıl haberleşeceğini tasarlarsınız. Yani teknolojiyi sadece üretmekle kalmayan, onu işletme mantığı ve süreç verimliliğiyle harmanlayarak sistemin bütününü gören mühendisler yetiştirir.
         </p>
+      </div>
 
       <div class="about-text">
-        <h2>Biz Kimiz?</h2>
-        <p class="lead">
+        <h2 data-i18n="aboutWhoTitle">Biz Kimiz?</h2>
+        <p class="lead" data-i18n="aboutWhoText">
           Bizler, Sakarya Üniversitesi Bilişim Sistemleri
           Mühendisliği Topluluğu olarak; mühendislik disiplinini
           sosyal becerilerle birleştiren, 'Sosyal Mühendisler'
@@ -77,7 +84,7 @@
           dinamik öğrenci topluluklarından biriyiz.
         </p>
 
-        <p class="muted">
+        <p class="muted" data-i18n="aboutWhoMuted">
           Amacımız; öğrencileri teknik, sosyal ve akademik alanlarda
           geliştirecek etkinlikler düzenlemek, ekip çalışmasını teşvik etmek
           ve üniversite içinde sürdürülebilir bir topluluk kültürü oluşturmaktır.
@@ -86,32 +93,23 @@
 
       <div class="about-cards">
         <div class="card">
-          <h3>Misyonumuz</h3>
-          <p>
-            Öğrenciler arasında bilişim
-            sistemlerine yönelik bilgi
-            paylaşımını sağlamak, teknik
-            becerileri artırmak, sektöre
-            hazırlık sürecinde donanımlı
-            bireyler yetiştirmek, sosyal
-            ve profesyonel gelişimi
-            desteklemek amacıyla teknik
-            eğitimler, etkinlikler ve sosyal
-            buluşmalar düzenlemek.
+          <h3 data-i18n="missionTitle">Misyonumuz</h3>
+          <p data-i18n="missionText">
+            Öğrenciler arasında bilişim sistemlerine yönelik bilgi
+            paylaşımını sağlamak, teknik becerileri artırmak, sektöre
+            hazırlık sürecinde donanımlı bireyler yetiştirmek, sosyal
+            ve profesyonel gelişimi desteklemek amacıyla teknik
+            eğitimler, etkinlikler ve sosyal buluşmalar düzenlemek.
           </p>
         </div>
 
         <div class="card">
-          <h3>Vizyonumuz</h3>
-          <p>
-            Teknolojiyi ve yenilikçi
-            düşünceyi benimseyen, bilgi
-            ve yeteneklerle donatılmış
-            bireyler yetiştirerek
-            üniversitemize ve topluma
-            katkı sağlayan, teknik ve
-            sosyal gelişimi destekleyen
-            öncü bir topluluk olmak.
+          <h3 data-i18n="visionTitle">Vizyonumuz</h3>
+          <p data-i18n="visionText">
+            Teknolojiyi ve yenilikçi düşünceyi benimseyen, bilgi
+            ve yeteneklerle donatılmış bireyler yetiştirerek
+            üniversitemize ve topluma katkı sağlayan, teknik ve
+            sosyal gelişimi destekleyen öncü bir topluluk olmak.
           </p>
         </div>
       </div>
@@ -119,239 +117,191 @@
     </div>
   </section>
 
-  
+  <section id="join" class="section">
+    <div class="container cta-grid">
+
+      <div class="card join-card">
+        <h2 data-i18n="joinTitle">Kulübe Üye Ol</h2>
+        <p class="muted" data-i18n="joinIntro">
+          Bilişim Sistemleri Mühendisliği Topluluğu'na katılmak, etkinliklerimizden
+          haberdar olmak ve ekibimizin bir parçası olmak için aşağıdaki kanallardan bize ulaş.
+        </p>
+
+        <div class="join-links">
+          <a class="join-link" href="https://sabis.sakarya.edu.tr/" target="_blank" rel="noopener noreferrer" data-link="sabis">
+            <span class="join-link-icon" aria-hidden="true">🎓</span>
+            <span class="join-link-text">
+              <strong data-i18n="joinSabisTitle">SABİS'ten Üye Ol</strong>
+              <small class="muted" data-i18n="joinSabisDesc">Resmi kulüp üyelik başvurusu</small>
+            </span>
+          </a>
+
+          <a class="join-link" href="https://chat.whatsapp.com/Ltrsb86Mns03nwCVO3CJ9i" target="_blank" rel="noopener noreferrer" data-link="whatsapp">
+            <span class="join-link-icon" aria-hidden="true"><img src="image/whatsapp.svg" alt="" width="20" height="20"></span>
+            <span class="join-link-text">
+              <strong data-i18n="joinWhatsappTitle">WhatsApp Grubu</strong>
+              <small class="muted" data-i18n="joinWhatsappDesc">Duyuruları anlık takip et</small>
+            </span>
+          </a>
+
+          <a class="join-link" href="https://www.instagram.com/saubsmt/" target="_blank" rel="noopener noreferrer" data-link="instagram">
+            <span class="join-link-icon" aria-hidden="true"><img src="image/instagram.svg" alt="" width="20" height="20"></span>
+            <span class="join-link-text">
+              <strong data-i18n="joinInstagramTitle">Instagram</strong>
+              <small class="muted" data-i18n="joinInstagramDesc">Etkinlik görselleri ve hikayeler</small>
+            </span>
+          </a>
+
+          <a class="join-link" href="https://www.linkedin.com/in/bsmt/" target="_blank" rel="noopener noreferrer" data-link="linkedin">
+            <span class="join-link-icon" aria-hidden="true"><img src="image/linkedin.svg" alt="" width="20" height="20"></span>
+            <span class="join-link-text">
+              <strong data-i18n="joinLinkedinTitle">LinkedIn</strong>
+              <small class="muted" data-i18n="joinLinkedinDesc">Profesyonel ağ ve iş ilanları</small>
+            </span>
+          </a>
+        </div>
+      </div>
+
+      <div class="card next-event-card" id="nextEventCard" aria-live="polite"></div>
+
+    </div>
+  </section>
+
   <section id="events" class="section">
-  <div class="container">
-    <div class="section-head">
-      <h2>Etkinlikler</h2>
-    </div>
-
-    <div class="events-slider">
-      <button class="slider-btn" id="eventsPrev" aria-label="Önceki">‹</button>
-
-      <div class="events-track" id="eventsTrack">
-        
+    <div class="container">
+      <div class="section-head">
+        <h2 data-i18n="navEvents">Etkinlikler</h2>
       </div>
 
-      <button class="slider-btn" id="eventsNext" aria-label="Sonraki">›</button>
+      <div class="events-slider">
+        <button class="slider-btn" id="eventsPrev" type="button" aria-label="Önceki etkinlik" data-i18n-attr="aria-label:prevEventAria">‹</button>
+
+        <div class="events-track" id="eventsTrack"></div>
+
+        <button class="slider-btn" id="eventsNext" type="button" aria-label="Sonraki etkinlik" data-i18n-attr="aria-label:nextEventAria">›</button>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-
- <section id="past-events" class="section">
-  <div class="container">
-    <div class="section-head">
-      <h2>Geçmiş Etkinlikler</h2>
-    </div>
-
-    <div class="events-slider">
-      <button class="slider-btn" id="pastPrev" aria-label="Önceki">‹</button>
-
-      <div class="events-track" id="pastTrack">
-        
+  <section id="past-events" class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2 data-i18n="pastEventsTitle">Geçmiş Etkinlikler</h2>
       </div>
 
-      <button class="slider-btn" id="pastNext" aria-label="Sonraki">›</button>
+      <div class="events-slider">
+        <button class="slider-btn" id="pastPrev" type="button" aria-label="Önceki etkinlik" data-i18n-attr="aria-label:prevEventAria">‹</button>
+
+        <div class="events-track" id="pastTrack"></div>
+
+        <button class="slider-btn" id="pastNext" type="button" aria-label="Sonraki etkinlik" data-i18n-attr="aria-label:nextEventAria">›</button>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-
- 
   <section id="team" class="section section-soft">
     <div class="container">
       <div class="section-head">
-        <h2>Yönetim Ekibimiz</h2>
+        <h2 data-i18n="teamSectionTitle">Yönetim Ekibimiz</h2>
       </div>
 
       <div class="team-slider">
-        <button class="slider-btn" id="teamPrev" aria-label="Geri">‹</button>
+        <button class="slider-btn" id="teamPrev" type="button" aria-label="Geri" data-i18n-attr="aria-label:teamPrevAria">‹</button>
 
-        <div class="team-track" id="teamTrack">
+        <div class="team-track" id="teamTrack"></div>
 
-          <article class="card team-card">
-            <img class="team-photo" src="image/1.jpeg" alt="Melik Mirza Çelik">
-            <h3>Melik Mirza Çelik</h3>
-            <p class="muted">Başkan</p>
-          </article>
-
-          <article class="card team-card">
-            <img class="team-photo" src="image/3.jpeg" alt="Emirhan Hasan Aydın">
-            <h3>Emirhan Hasan Aydın</h3>
-            <p class="muted">Başkan Yardımcısı</p>
-          </article>
-
-          <article class="card team-card">
-            <img class="team-photo" src="image/2.jpeg" alt="">
-            <h3></h3>
-            <p class="muted">Başkan Yardımcısı</p>
-          </article>
-
-          <article class="card team-card">
-            <img class="team-photo" src="image/4.jpeg" alt="">
-            <h3></h3>
-            <p class="muted">Genel Sekreter</p>
-          </article>
-
-          <article class="card team-card">
-            <img class="team-photo" src="image/5.jpeg" alt="Ebrar Ergül">
-            <h3>Ebrar Ergül</h3>
-            <p class="muted">Organizasyon</p>
-          </article>
-
-          <article class="card team-card">
-            <img class="team-photo" src="image/6.jpeg" alt="Tarık Emre Keskin">
-            <h3>Tarık Emre Keskin</h3>
-            <p class="muted">Organizasyon</p>
-          </article>
-
-          <article class="card team-card">
-            <img class="team-photo" src="image/7.jpeg" alt="">
-            <h3></h3>
-            <p class="muted">Sponsorluk</p>
-          </article>
-
-          <article class="card team-card">
-            <img class="team-photo" src="image/8.jpeg" alt="">
-            <h3></h3>
-            <p class="muted">Sosyal Medya</p>
-          </article>
-
-          <article class="card team-card">
-            <img class="team-photo" src="image/9.jpeg" alt="">
-            <h3></h3>
-            <p class="muted">Sosyal Medya</p>
-          </article>
-
-          <article class="card team-card">
-            <img class="team-photo" src="image/10.jpeg" alt="Özlem Dilber">
-            <h3>Özlem Dilber</h3>
-            <p class="muted">Grafik Tasarım</p>
-          </article>
-
-        </div>
-
-        <button class="slider-btn" id="teamNext" aria-label="İleri">›</button>
+        <button class="slider-btn" id="teamNext" type="button" aria-label="İleri" data-i18n-attr="aria-label:teamNextAria">›</button>
       </div>
 
     </div>
   </section>
 
   <section id="sss" class="section">
-  <div class="container">
-    <div class="section-head">
-      <h2>Sıkça Sorulan Sorular</h2>
+    <div class="container">
+      <div class="section-head">
+        <h2 data-i18n="faqTitle">Sıkça Sorulan Sorular</h2>
+      </div>
+
+      <div class="faq-container" id="faqContainer"></div>
+
     </div>
+  </section>
 
-    <div class="faq-container">
-      
-      <div class="faq-item card">
-        <button class="faq-question">
-          Bilişim Sistemleri Mühendisliği ile Bilgisayar/Yazılım Mühendisliği arasındaki temel fark nedir?
-          <span class="faq-icon">+</span>
-        </button>
-        <div class="faq-answer">
-          <p>Bilgisayar/Yazılım Mühendisliği teknolojiyi sıfırdan üretir. Algoritmalar, sistem mimarisi ve kodun "nasıl" çalıştığıyla ilgilenir.
-          Bilişim Sistemleri Mühendisliği ise teknolojiyi kullanır ve yönetir. Üretilen bu sistemlerin kurumların iş süreçlerini iyileştirmek için nasıl entegre edileceğine odaklanır. (Teknoloji ile işletme arasındaki köprüdür.)</p>
-        </div>
-      </div>
-
-      <div class="faq-item card">
-        <button class="faq-question">
-          Mezun olduğumda hangi unvanlarla, hangi alanlarda çalışabilirim?
-          <span class="faq-icon">+</span>
-        </button>
-        <div class="faq-answer">
-          <p>Yazılım ve Web Geliştirme, Veri ve Veritabanı, Sistem ve Altyapı Yönetimi, Ağ Yönetimi, Güvenlik Uzmanlığı, Proje ve Süreç Yönetimi vb. alanlarda çalışabilirsin.</p>
-        </div>
-      </div>
-
-      <div class="faq-item card">
-        <button class="faq-question">
-          Sadece Bilişim Sistemleri öğrencileri mi katılabilir?
-          <span class="faq-icon">+</span>
-        </button>
-        <div class="faq-answer">
-          <p>Hayır, teknolojiye ve bilişime ilgi duyan, kendini bu alanda geliştirmek isteyen tüm bölümlerden öğrenciler etkinliklerimize katılabilir ve topluluğumuza üye olabilir.</p>
-        </div>
-      </div>
-    </div>
-    
-  </div>
-</section>
-  
   <section id="contact" class="section section-soft">
-  <div class="container">
-    <div class="section-head">
-      <h2>Fikirlerinizi bizimle paylaşabilirsiniz</h2>
+    <div class="container">
+      <div class="section-head">
+        <h2 data-i18n="contactTitle">Fikirlerinizi bizimle paylaşabilirsiniz</h2>
+      </div>
+
+      <iframe name="hidden_iframe" title="Form gönderim çerçevesi" style="display:none;" data-i18n-attr="title:iframeTitle"></iframe>
+
+      <form class="form"
+            id="contactForm"
+            action="https://formsubmit.co/bsmt@sakarya.edu.tr"
+            method="POST"
+            target="hidden_iframe">
+
+        <input type="hidden" name="_subject" value="BSMT - Yeni Mesaj">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+
+        <div class="form-row">
+          <label>
+            <span data-i18n="formNameLabel">Ad Soyad</span>
+            <input class="input" name="Ad Soyad" autocomplete="name" required>
+          </label>
+          <label>
+            <span data-i18n="formEmailLabel">E-posta</span>
+            <input class="input" name="E-posta" type="email" autocomplete="email" required>
+          </label>
+        </div>
+
+        <div class="form-row">
+          <label>
+            <span data-i18n="formDeptLabel">Bölümünüz</span>
+            <input class="input" name="Bölüm">
+          </label>
+          <label>
+            <span data-i18n="formClassLabel">Sınıf</span>
+            <select class="input" name="Sınıf">
+              <option data-i18n="formClassPrep">Hazırlık</option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+            </select>
+          </label>
+        </div>
+
+        <label>
+          <span data-i18n="formMessageLabel">Mesaj</span>
+          <textarea class="input" name="Mesaj" rows="4"></textarea>
+        </label>
+
+        <div class="form-actions">
+          <button class="btn" type="submit" data-i18n="formSubmit">Gönder</button>
+          <span id="formStatus" class="muted" role="status" aria-live="polite"></span>
+        </div>
+      </form>
+
+      <div class="social">
+        <a class="pill" href="https://www.instagram.com/saubsmt/" target="_blank" rel="noopener noreferrer" data-link="instagram">Instagram</a>
+        <a class="pill" href="https://chat.whatsapp.com/Ltrsb86Mns03nwCVO3CJ9i" target="_blank" rel="noopener noreferrer" data-link="whatsapp">WhatsApp</a>
+        <a class="pill" href="https://www.linkedin.com/in/bsmt/" target="_blank" rel="noopener noreferrer" data-link="linkedin">LinkedIn</a>
+      </div>
     </div>
-
-    <iframe name="hidden_iframe" style="display:none;"></iframe>
-
-    <form class="form"
-          action="https://formsubmit.co/bsmt@sakarya.edu.tr"
-          method="POST"
-          target="hidden_iframe"
-          onsubmit="formSent();">
-
-      <input type="hidden" name="_subject" value="BSMT - Yeni Mesaj">
-      <input type="hidden" name="_captcha" value="false">
-      <input type="hidden" name="_template" value="table">
-
-      <div class="form-row">
-        <label>
-          Ad Soyad
-          <input class="input" name="Ad Soyad" required>
-        </label>
-        <label>
-          E-posta
-          <input class="input" name="E-posta" type="email" required>
-        </label>
-      </div>
-
-      <div class="form-row">
-        <label>
-          Bölümünüz
-          <input class="input" name="Bölüm">
-        </label>
-        <label>
-          Sınıf
-          <select class="input" name="Sınıf">
-            <option>Hazırlık</option>
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-          </select>
-        </label>
-      </div>
-
-      <label>
-        Mesaj
-        <textarea class="input" name="Mesaj" rows="4"></textarea>
-      </label>
-
-      <div class="form-actions">
-        <button class="btn" type="submit">Gönder</button>
-        <span id="formStatus" class="muted"></span>
-      </div>
-    </form>
-
-    <div class="social">
-      <a class="pill" href="https://www.instagram.com/saubsmt/" target="_blank" rel="noreferrer">Instagram</a>
-      <a class="pill" href="https://chat.whatsapp.com/Ltrsb86Mns03nwCVO3CJ9i" target="_blank" rel="noreferrer">WhatsApp</a>
-      <a class="pill" href="https://www.linkedin.com/in/bsmt/" target="_blank" rel="noreferrer">LinkedIn</a>
-    </div>
-  </div>
-</section>
-
+  </section>
 
   <footer class="footer">
     <div class="container footer-inner">
-      <span class="muted">© <span id="year"></span> Bilişim Sistemleri Mühendisliği Topluluğu</span>
+      <span class="muted">© <span id="year"></span> <span data-i18n="footerOrg">Bilişim Sistemleri Mühendisliği Topluluğu</span></span>
     </div>
   </footer>
+
+  <div class="lightbox" id="lightbox" hidden role="dialog" aria-modal="true" aria-label="Etkinlik fotoğrafı" data-i18n-attr="aria-label:lightboxAria">
+    <button class="lightbox-close" id="lightboxClose" type="button" aria-label="Kapat" data-i18n-attr="aria-label:lightboxCloseAria">✕</button>
+    <img class="lightbox-img" id="lightboxImg" src="" alt="">
+  </div>
 
   <script src="app.js"></script>
 </body>
