@@ -180,9 +180,13 @@ function init(){
 }
 
 const bgImages = [
-  "image/100.jpeg",
+  "image/100.jpg",
+  "image/75.jpeg",
+  "image/80.jpeg",
+  "image/85.jpeg",
+  "image/90.jpeg",
   "image/95.jpeg",
-  "image/80.jpeg"
+  "image/105.jpeg"
 ];
 
 bgImages.forEach(src => {
